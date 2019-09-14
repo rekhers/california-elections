@@ -1,4 +1,6 @@
 import "babel-polyfill";
+import * as d3 from "d3";
+
 
 function scaryClown() {
     return new Promise(resolve => {
