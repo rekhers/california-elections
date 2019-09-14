@@ -4,10 +4,10 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
-    "watch": "parcel watch src/js/**.js -d  dist/js/",
-    "sass": "sass --sourcemap=none --watch src/scss/styles.scss:dist/css/styles.css --style compressed"
+    "start": "parcel src/index.html"
   },
   "dependencies": {
+    "babel-polyfill": "^6.26.0",
     "parcel-bundler": "^1.12.3"
   }
 }
