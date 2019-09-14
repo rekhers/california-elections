@@ -1,0 +1,233 @@
+county,candidate,votes
+Alameda,Hillary Clinton,514842
+Alameda,Donald J. Trump,95922
+Alameda,Jill Stein,17830
+Alameda,Gary Johnson,16906
+Alpine,Hillary Clinton,334
+Alpine,Donald J. Trump,217
+Alpine,Jill Stein,21
+Alpine,Gary Johnson,25
+Amador,Hillary Clinton,6004
+Amador,Donald J. Trump,10485
+Amador,Jill Stein,227
+Amador,Gary Johnson,804
+Butte,Hillary Clinton,41567
+Butte,Donald J. Trump,45144
+Butte,Jill Stein,2594
+Butte,Gary Johnson,4625
+Calaveras,Hillary Clinton,7944
+Calaveras,Donald J. Trump,13511
+Calaveras,Jill Stein,424
+Calaveras,Gary Johnson,1104
+Colusa,Hillary Clinton,2661
+Colusa,Donald J. Trump,3551
+Colusa,Jill Stein,85
+Colusa,Gary Johnson,260
+Contra Costa,Hillary Clinton,319287
+Contra Costa,Donald J. Trump,115956
+Contra Costa,Jill Stein,8637
+Contra Costa,Gary Johnson,16123
+Del Norte,Hillary Clinton,3485
+Del Norte,Donald J. Trump,5134
+Del Norte,Jill Stein,245
+Del Norte,Gary Johnson,416
+El Dorado,Hillary Clinton,36404
+El Dorado,Donald J. Trump,49247
+El Dorado,Jill Stein,1425
+El Dorado,Gary Johnson,5027
+Fresno,Hillary Clinton,141341
+Fresno,Donald J. Trump,124049
+Fresno,Jill Stein,4300
+Fresno,Gary Johnson,9246
+Glenn,Hillary Clinton,3065
+Glenn,Donald J. Trump,5788
+Glenn,Jill Stein,97
+Glenn,Gary Johnson,375
+Humboldt,Hillary Clinton,33200
+Humboldt,Donald J. Trump,18373
+Humboldt,Jill Stein,3681
+Humboldt,Gary Johnson,2163
+Imperial,Hillary Clinton,32667
+Imperial,Donald J. Trump,12704
+Imperial,Jill Stein,745
+Imperial,Gary Johnson,1221
+Inyo,Hillary Clinton,3155
+Inyo,Donald J. Trump,4248
+Inyo,Jill Stein,214
+Inyo,Gary Johnson,328
+Kern,Hillary Clinton,98689
+Kern,Donald J. Trump,129584
+Kern,Jill Stein,2887
+Kern,Gary Johnson,9359
+Kings,Hillary Clinton,13617
+Kings,Donald J. Trump,18093
+Kings,Jill Stein,411
+Kings,Gary Johnson,1338
+Lake,Hillary Clinton,11496
+Lake,Donald J. Trump,10599
+Lake,Jill Stein,930
+Lake,Gary Johnson,1095
+Lassen,Hillary Clinton,2224
+Lassen,Donald J. Trump,7574
+Lassen,Jill Stein,105
+Lassen,Gary Johnson,473
+Los Angeles,Hillary Clinton,2464364
+Los Angeles,Donald J. Trump,769743
+Los Angeles,Jill Stein,76465
+Los Angeles,Gary Johnson,88968
+Madera,Hillary Clinton,17029
+Madera,Donald J. Trump,23357
+Madera,Jill Stein,644
+Madera,Gary Johnson,1558
+Marin,Hillary Clinton,108707
+Marin,Donald J. Trump,21771
+Marin,Jill Stein,3109
+Marin,Gary Johnson,4180
+Mariposa,Hillary Clinton,3122
+Mariposa,Donald J. Trump,5185
+Mariposa,Jill Stein,189
+Mariposa,Gary Johnson,326
+Mendocino,Hillary Clinton,22079
+Mendocino,Donald J. Trump,10888
+Mendocino,Jill Stein,2108
+Mendocino,Gary Johnson,1331
+Merced,Hillary Clinton,37317
+Merced,Donald J. Trump,28725
+Merced,Jill Stein,1209
+Merced,Gary Johnson,2410
+Modoc,Hillary Clinton,877
+Modoc,Donald J. Trump,2696
+Modoc,Jill Stein,50
+Modoc,Gary Johnson,122
+Mono,Hillary Clinton,2773
+Mono,Donald J. Trump,2111
+Mono,Jill Stein,142
+Mono,Gary Johnson,222
+Monterey,Hillary Clinton,89088
+Monterey,Donald J. Trump,34895
+Monterey,Jill Stein,2823
+Monterey,Gary Johnson,4547
+Napa,Hillary Clinton,39199
+Napa,Donald J. Trump,17411
+Napa,Jill Stein,1262
+Napa,Gary Johnson,2551
+Nevada,Hillary Clinton,26053
+Nevada,Donald J. Trump,23365
+Nevada,Jill Stein,2189
+Nevada,Gary Johnson,2378
+Orange,Hillary Clinton,609961
+Orange,Donald J. Trump,507148
+Orange,Jill Stein,18068
+Orange,Gary Johnson,46128
+Placer,Hillary Clinton,73509
+Placer,Donald J. Trump,95138
+Placer,Jill Stein,2501
+Placer,Gary Johnson,9245
+Plumas,Hillary Clinton,3459
+Plumas,Donald J. Trump,5420
+Plumas,Jill Stein,186
+Plumas,Gary Johnson,411
+Riverside,Hillary Clinton,373695
+Riverside,Donald J. Trump,333243
+Riverside,Jill Stein,11320
+Riverside,Gary Johnson,24089
+Sacramento,Hillary Clinton,326023
+Sacramento,Donald J. Trump,189789
+Sacramento,Jill Stein,9846
+Sacramento,Gary Johnson,24412
+San Benito,Hillary Clinton,12521
+San Benito,Donald J. Trump,7841
+San Benito,Jill Stein,364
+San Benito,Gary Johnson,815
+San Bernardino,Hillary Clinton,340833
+San Bernardino,Donald J. Trump,271240
+San Bernardino,Jill Stein,10604
+San Bernardino,Gary Johnson,21050
+San Diego,Hillary Clinton,735476
+San Diego,Donald J. Trump,477766
+San Diego,Jill Stein,22820
+San Diego,Gary Johnson,51663
+San Francisco,Hillary Clinton,345084
+San Francisco,Donald J. Trump,37688
+San Francisco,Jill Stein,9904
+San Francisco,Gary Johnson,8883
+San Joaquin,Hillary Clinton,121124
+San Joaquin,Donald J. Trump,88936
+San Joaquin,Jill Stein,3134
+San Joaquin,Gary Johnson,8049
+San Luis Obispo,Hillary Clinton,67107
+San Luis Obispo,Donald J. Trump,56164
+San Luis Obispo,Jill Stein,2848
+San Luis Obispo,Gary Johnson,6473
+San Mateo,Hillary Clinton,237882
+San Mateo,Donald J. Trump,57929
+San Mateo,Jill Stein,5102
+San Mateo,Gary Johnson,9464
+Santa Barbara,Hillary Clinton,107142
+Santa Barbara,Donald J. Trump,56365
+Santa Barbara,Jill Stein,3719
+Santa Barbara,Gary Johnson,6748
+Santa Clara,Hillary Clinton,511684
+Santa Clara,Donald J. Trump,144826
+Santa Clara,Jill Stein,12664
+Santa Clara,Gary Johnson,25325
+Santa Cruz,Hillary Clinton,95249
+Santa Cruz,Donald J. Trump,22438
+Santa Cruz,Jill Stein,4485
+Santa Cruz,Gary Johnson,4325
+Shasta,Hillary Clinton,22301
+Shasta,Donald J. Trump,51778
+Shasta,Jill Stein,1300
+Shasta,Gary Johnson,3382
+Sierra,Hillary Clinton,601
+Sierra,Donald J. Trump,1048
+Sierra,Jill Stein,42
+Sierra,Gary Johnson,98
+Siskiyou,Hillary Clinton,7234
+Siskiyou,Donald J. Trump,11341
+Siskiyou,Jill Stein,575
+Siskiyou,Gary Johnson,875
+Solano,Hillary Clinton,102360
+Solano,Donald J. Trump,51920
+Solano,Jill Stein,2771
+Solano,Gary Johnson,6254
+Sonoma,Hillary Clinton,160435
+Sonoma,Donald J. Trump,51408
+Sonoma,Jill Stein,7347
+Sonoma,Gary Johnson,8987
+Stanislaus,Hillary Clinton,81647
+Stanislaus,Donald J. Trump,78494
+Stanislaus,Jill Stein,2562
+Stanislaus,Gary Johnson,6662
+Sutter,Hillary Clinton,13076
+Sutter,Donald J. Trump,18176
+Sutter,Jill Stein,382
+Sutter,Gary Johnson,1437
+Tehama,Hillary Clinton,6809
+Tehama,Donald J. Trump,15494
+Tehama,Jill Stein,290
+Tehama,Gary Johnson,953
+Trinity,Hillary Clinton,2214
+Trinity,Donald J. Trump,2812
+Trinity,Jill Stein,239
+Trinity,Gary Johnson,302
+Tulare,Hillary Clinton,47585
+Tulare,Donald J. Trump,58299
+Tulare,Jill Stein,1620
+Tulare,Gary Johnson,3800
+Tuolumne,Hillary Clinton,9123
+Tuolumne,Donald J. Trump,14551
+Tuolumne,Jill Stein,384
+Tuolumne,Gary Johnson,1101
+Ventura,Hillary Clinton,194402
+Ventura,Donald J. Trump,132323
+Ventura,Jill Stein,6315
+Ventura,Gary Johnson,13679
+Yolo,Hillary Clinton,54752
+Yolo,Donald J. Trump,20739
+Yolo,Jill Stein,1779
+Yolo,Gary Johnson,3346
+Yuba,Hillary Clinton,7910
+Yuba,Donald J. Trump,13170
+Yuba,Jill Stein,438
+Yuba,Gary Johnson,1063
