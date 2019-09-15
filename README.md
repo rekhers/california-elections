@@ -6,5 +6,8 @@ A choropleth county map of the 2016 California Presidential Election Results
 
 Get started by installing dependencies with, `yarn install` or `yarn`. 
 
-Next, spin up a dev server that watches `index.html` and its dependencies at `localhost:1234`.
+Next, spin up a dev server that watches `index.html` and its dependencies and navigate to `localhost:1234`.
 
+## Explanation
+
+This project is built using Parcel

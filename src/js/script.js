@@ -15,36 +15,32 @@ function insertSVG () {
     })
 }
 
-function buildMap(data) {
-   console.log("data", data)
+function buildMap(data, fips) {
+   console.log("fips", fips)
+
+   //rollup data by county
+   var counties = d3.nest()
+   .key(function(d) { return d.county; })
+   .entries(data);
+
+   console.log("COUNTIES:", counties)
 
    d3.select(".cali")
-      .attr("viewbox", "0 0 400 400")
+      .attr("viewbox", "0 0 300 400")
       .attr("width", "100%")
       .attr("height", "auto")
-
-   //  d3.selectAll("path")
-   //    .attr("fill", "blue")
-   //    .attr("stroke", "white")
-   //    .on("mouseover", () => {
-   //       const el = document.getElementById(d3.event.target.id);
-   //       d3.select(el).attr('fill', 'green');
-   //    })
-   //    .on("mouseout", () => {
-   //       const el = document.getElementById(d3.event.target.id);
-   //       d3.select(el).attr('fill', 'blue');
-   //    })
-   //    .attr("stroke-width", "1.5")
 }
 
 
 /*
-* 
+* Initialize the map
 */
 async function init () {
    const svg = await insertSVG();
    const data = await d3.csv('/data/ca-votes.csv');
-   buildMap(data)
+   const fips = await d3.csv('/data/ca-fips.csv');
+   console.log("fips", fips);
+   buildMap(data, fips)
 }
 
 
