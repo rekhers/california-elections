@@ -5,17 +5,14 @@ body {
     font-family: 'Roboto', sans-serif;
 }
 
-iframe {
-    width: 100%;
-    height: 100%;
-    margin: 0;
-}
 
-.cali path {
-    fill: blue;
-}
+path {
+    fill: gray;
+    stroke: white;
+    stroke-width: 2;
 
-g {
-    fill: blue;
-    stroke: green;
+    &:hover {
+        cursor: pointer;
+        fill: blue;
+    }
 }
