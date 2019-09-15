@@ -1,4 +1,21 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,500&display=swap');
+
 body {
-    background-color: green;
-    color: blue;
+    color: purple;
+    font-family: 'Roboto', sans-serif;
+}
+
+iframe {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+}
+
+.cali path {
+    fill: blue;
+}
+
+g {
+    fill: blue;
+    stroke: green;
 }
