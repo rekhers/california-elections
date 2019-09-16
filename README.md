@@ -26,11 +26,11 @@ In setting up this project, I chose to use Parcel.js as a bundler because of its
 
 I included a script file pointing to `main` which initializes and serves as an entrypoint to the code that inserts the map SVG into the DOM, rerolls data, adds colors to the map, and creates the election results card component.
 
-I made my code more readable by splitting pieces out into modules. In an ideal world, I would figure out a way to not repeat the d3 dependencies that multiple modules require. I would also add unit tests and use docblock style comments for each function if I had more time. 
+I made my code more readable by splitting pieces out into modules. In an ideal world, I would figure out a way to not repeat the d3 dependencies that multiple modules require. I would also add unit tests if I had more time. 
 
 ## CSS
 
-Parcel handled compiling SCSS with no configuration on my end. In naming elements, I used a taxonomy that prefixes "layout" classes with `l-` and component classes with `c-`. Further, I used BEM style descriptors to keep the CSS readable and logical. 
+Parcel handled compiling SCSS with no configuration on my end. In naming elements, I used a taxonomy that prefixes "layout" classes with `l-` and component classes with `c-`. Further, I used BEM style descriptors to keep the CSS readable and logical. If this were a larger project, I would have defined  and used variables for styles to enable readability and reusability.
 
 ## HTML
 

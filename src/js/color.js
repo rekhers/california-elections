@@ -1,5 +1,10 @@
 import { whoWon } from "./winner";
 
+/**
+ * Utility to return a color for a given county
+ * @param  {Object} county   
+ * @return {String} fill color
+ */
 export function getColor(county) {
 
     if(whoWon(county) === "republican") {

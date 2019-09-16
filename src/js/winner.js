@@ -1,4 +1,8 @@
-
+/**
+ * Utility that calculates the winner for a county
+ * @param  {Object} county   
+ * @return {String} name of the winning party
+ */
 export function whoWon(county) {
     const results = county[0].votes;
     const lookup = {};
@@ -16,7 +20,7 @@ export function whoWon(county) {
     } else if (parseInt(lookup[democrat]) > parseInt(lookup[republican])) {
         return "democrat"
     } else {
-        return "other party/tie"
+        return "other"
     }
 
 }

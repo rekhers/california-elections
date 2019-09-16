@@ -2,6 +2,11 @@ import * as d3 from "d3";
 import { getColor } from "./color"
 import { whoWon } from "./winner"
 
+/**
+ * Style the map svg, add color and click events to map paths
+ * @param  {Object} data Data object with FIPS codes
+ * @return {void}
+ */
 export function buildMap(data) {
     d3.select(".svg-ca")
        .attr("viewbox", "0 0 300 400")
@@ -33,16 +38,18 @@ export function buildMap(data) {
  
  }
 
-
+/**
+ * Shows election card corresponding to clicked county
+ * @param  {string} id FIPS id  
+ * @return {void}
+ */
  function showCard(id) {
     const cards = document.querySelectorAll(".c-card__content");
     const currentCard = document.querySelector(`.c-card__content--${id}`);
 
-
     cards.forEach((card) => {
          card.classList.remove("hidden");
     })
-
 
     cards.forEach((card) => {
         if(card !== currentCard) {
@@ -52,6 +59,12 @@ export function buildMap(data) {
  }
 
 
+
+/**
+ * Dynamically build election cards for each county 
+ * @param  {Object} county   
+ * @return {void}
+ */
  function buildCards(county) {
     const cardContainer = document.querySelector(".l-card");
     const card = document.createElement('div');
@@ -69,7 +82,11 @@ export function buildMap(data) {
     }
 
 
-
+/**
+ * Dynamically build election cards for each county 
+ * @param  {Number} unformatted number   
+ * @return {String} string with commas in all the right places
+ */
 function numberWithCommas(x) {
     return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
  }

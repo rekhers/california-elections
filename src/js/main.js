@@ -2,11 +2,10 @@ import "babel-polyfill";
 import * as d3 from "d3";
 import { buildMap } from "./map";
 
-/*
-*
-* Initialize the map by awaiting our three data files
-*
-*/
+/**
+ * Initialize the map by awaiting our local data files and svg 
+ * @return {void}
+ */
 async function init () {
    await insertSVG();
    const data = await d3.csv('/data/ca-votes.csv');
@@ -15,12 +14,12 @@ async function init () {
    handleData(data, fips);
 }
 
-
-/*
-*
-* Rolls up data, adds fips code, rolls it up once more such that its keyed by fips
-*
-*/
+/**
+ * Add fips to the election data and roll it up
+ * @param  {Object} data ca votes by county without fips
+ * @param  {Object} fips fips code lookups   
+ * @return {void}
+ */
 function handleData(data, fips) {
    const counties = d3.nest()
    .key((d) => { return d.county; })
@@ -38,9 +37,10 @@ function handleData(data, fips) {
    buildMap(newMatched);
 }
 
-/*
-* Fetch the svg and insert it into the DOM
-*/
+/**
+ * Insert local svg map into the dom 
+ * @return {void}
+ */
 export function insertSVG () {
    const container = document.querySelector(".l-svg");
 
