@@ -1,5 +1,6 @@
 import * as d3 from "d3";
 import { getColor } from "./color"
+import { whoWon } from "./winner"
 
 export function buildMap(data) {
     d3.select(".svg-ca")
@@ -16,16 +17,6 @@ export function buildMap(data) {
    })
  
    d3.selectAll("path")
-    //  .on("mouseover", () => {
-    //    d3.select(d3.event.target)
-    //    .raise()
-    //    .classed('active', true);
-    //  })
-    //  .on("mouseout", () => {
-    //    d3.select(d3.event.target)
-    //    .lower()
-    //    .classed('active', false);
-    //  })
      .on("click", () => {
 
         d3.selectAll("path")
@@ -64,9 +55,10 @@ export function buildMap(data) {
  function buildCards(county) {
     const cardContainer = document.querySelector(".l-card");
     const card = document.createElement('div');
+    const winningLetter = whoWon(county).charAt(0,1).toUpperCase();
     cardContainer.appendChild(card);
     card.innerHTML = `<div class="c-card__content c-card__content--${county[0].fips}">
-    <h4 class="c-card__title"> ${county[0].name} </h4> 
+    <h4 class="c-card__title"> ${county[0].name} <span>(${winningLetter})</span> </h4> 
     <ul class="c-card__list"> 
      <li> ${county[0].votes[0].candidate}: ${numberWithCommas(county[0].votes[0].votes)}  </li>
      <li> ${county[0].votes[1].candidate}: ${numberWithCommas(county[0].votes[1].votes)}  </li>
