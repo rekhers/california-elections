@@ -16,7 +16,7 @@ In order to adapt this for desktop, I would consider adding tooltips and hover a
 
 One of the major things I would have done on a larger project would have been to write the Map code as a class that accepts different configurations of data as a parameter. This way, we could change the data object such that the user could toggle between data views. One example of this would be seeing one candidate's popularity across all counties as a choropleth.
 
-In order maintain a more complicated application with different versions of data, I would likely consider using a framework to maintain state across the application. 
+In order maintain a more complicated application with different versions of data, I would likely consider using a framework like React to help maintain state.
 
 ## Build
 
@@ -24,27 +24,14 @@ In setting up this project, I chose to use Parcel.js as a bundler because of its
 
 ## Javascript
 
-I included a script file pointing to `main` which initializes and serves as an entrypoint to the code that inserts the mapSVG into the DOM, rerolls data, adds colors to the map, and creates the election results card component.
+I included a script file pointing to `main` which initializes and serves as an entrypoint to the code that inserts the map SVG into the DOM, rerolls data, adds colors to the map, and creates the election results card component.
 
-I attempted to clean up my code and make it more readable by splitting pieces out into modules. In an ideal world, I would figure out a way to not repeat the d3 dependencies that multiple modules require. I would also add unit tests if I had more time.
+I made my code more readable by splitting pieces out into modules. In an ideal world, I would figure out a way to not repeat the d3 dependencies that multiple modules require. I would also add unit tests and use docblock style comments for each function if I had more time. 
 
 ## CSS
 
-Parcel handled compiling SCSS with no configuration on my end. In naming elements I attempted to use a taxonomy that prefixes "layout" classes with `l-` and component classes with `c-`. Further, I used BEM style descriptors to keep the CSS readable and logical. 
+Parcel handled compiling SCSS with no configuration on my end. In naming elements, I used a taxonomy that prefixes "layout" classes with `l-` and component classes with `c-`. Further, I used BEM style descriptors to keep the CSS readable and logical. 
 
 ## HTML
 
-I setup a simple HTML index file, but in a real project I would likely use some kind of templating language or framework that could access data and avoid being hardcoded at all.
-
-
-
-
-
-If I had more time, or the opportunity to build this out on desktop, I would: 
-    - Add tests
-    - Add docblock style comments
-    - Modularize code even further and make sure that d3 dependencies aren't being repeated
-    - Add tooltips or hover animations. Since the instructions were to optimize for mobile, I priotized click/tap events
-    - Would create a map class that could consume different configurations of the data to see a choropleth of votes by candidate across counties
-    - Potentially use a framework (React) depending on the use case
-    - Add a search/lookup bar
+I setup a simple HTML index file, but in a bigger project I would likely use some kind of templating language or framework that could access data and avoid being hardcoded at all.
