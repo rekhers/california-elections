@@ -53,21 +53,37 @@ function insertSVG () {
     })
 }
 
+
+
+function numberWithCommas(x) {
+   return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+}
+
+
 function buildCards(county) {
    console.log(county)
    const cardContainer = document.querySelector(".card-container");
    const card = document.createElement('div');
    cardContainer.appendChild(card);
-   card.innerHTML = `<h3 class="cardTitle"> ${county[0].name} </h3> 
-   <ul class="list"> 
-    <li> ${county[0].votes[0].candidate} : ${county[0].votes[0].votes}  </li>
-    <li> ${county[0].votes[1].candidate} : ${county[0].votes[1].votes}  </li>
-    <li> ${county[0].votes[2].candidate} : ${county[0].votes[2].votes}  </li>
-    <li> ${county[0].votes[3].candidate} : ${county[0].votes[3].votes}  </li>
+   card.innerHTML = `<div class="c-card__content">
+   <h4 class="c-card__title"> ${county[0].name} </h4> 
+   <ul class="c-card__list"> 
+    <li> ${county[0].votes[0].candidate}: ${numberWithCommas(county[0].votes[0].votes)}  </li>
+    <li> ${county[0].votes[1].candidate}: ${numberWithCommas(county[0].votes[1].votes)}  </li>
+    <li> ${county[0].votes[2].candidate}: ${numberWithCommas(county[0].votes[2].votes)}  </li>
+    <li> ${county[0].votes[3].candidate}: ${numberWithCommas(county[0].votes[3].votes)}  </li>
    </ul>`
 
    }
 
+
+      
+/*
+* 
+* Creates a lookup for each county, 
+* returns a fill for the current path
+*
+*/
 function getColor(county) {
    const results = county[0].votes;
    const lookup = {};
@@ -79,12 +95,7 @@ function getColor(county) {
          lookup[r.candidate] = r.votes;
       })
    }
-   
-   /*
-   * 
-   * Return red if Trump won, blue if Clinton won, and orange if neither won
-   * 
-   */
+
    if(parseInt(lookup[republican]) > parseInt(lookup[democrat])) {
       return "rgb(184, 24, 0)"
    } else if(parseInt(lookup[democrat]) > parseInt(lookup[republican])) {
@@ -95,7 +106,7 @@ function getColor(county) {
 }
 
 function buildMap(data) {
-   d3.select(".cali")
+   d3.select(".svg-ca")
       .attr("viewbox", "0 0 300 400")
       .attr("width", "100%")
       .attr("height", "auto")
@@ -107,6 +118,18 @@ function buildMap(data) {
       document.getElementById(path.id).setAttribute('fill', color);
       buildCards(data[path.id]);
   })
+
+  d3.selectAll("path")
+    .on("mouseover", () => {
+      d3.select(d3.event.target)
+      .raise()
+      .classed('active', true);
+    })
+    .on("mouseout", () => {
+      d3.select(d3.event.target)
+      .lower()
+      .classed('active', false);
+    })
 
 }
 
