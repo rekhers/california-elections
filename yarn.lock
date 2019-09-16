@@ -2,11 +2,6 @@
 # yarn lockfile v1
 
 
-"0@underscore":
-  version "0.0.0"
-  resolved "https://registry.yarnpkg.com/0/-/0-0.0.0.tgz#beabacb0a099c1dd215eaec15bb201318db7de6a"
-  integrity sha1-vqussKCZwd0hXq7BW7IBMY233mo=
-
 "@babel/code-frame@^7.0.0", "@babel/code-frame@^7.5.5":
   version "7.5.5"
   resolved "https://registry.yarnpkg.com/@babel/code-frame/-/code-frame-7.5.5.tgz#bc0782f6d69f7b7d49531219699b988f669a8f9d"
@@ -2034,13 +2029,6 @@ data-urls@^1.1.0:
     abab "^2.0.0"
     whatwg-mimetype "^2.2.0"
     whatwg-url "^7.0.0"
-
-data@^0.6.1:
-  version "0.6.1"
-  resolved "https://registry.yarnpkg.com/data/-/data-0.6.1.tgz#f363b07224f48e7cfd71d3df46c4b11f6f8e5f75"
-  integrity sha1-82OwciT0jnz9cdPfRsSxH2+OX3U=
-  dependencies:
-    "0" underscore
 
 date-now@^0.1.4:
   version "0.1.4"
