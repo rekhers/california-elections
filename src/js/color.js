@@ -1,6 +1,5 @@
 import { whoWon } from "./winner";
 
-
 export function getColor(county) {
 
     if(whoWon(county) === "republican") {
