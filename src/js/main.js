@@ -1,5 +1,6 @@
 import "babel-polyfill";
 import * as d3 from "d3";
+import { buildMap } from "./map.js";
 
 /*
 *
@@ -61,7 +62,6 @@ function numberWithCommas(x) {
 
 
 function buildCards(county) {
-   console.log(county)
    const cardContainer = document.querySelector(".card-container");
    const card = document.createElement('div');
    cardContainer.appendChild(card);
@@ -105,33 +105,7 @@ function getColor(county) {
    }
 }
 
-function buildMap(data) {
-   d3.select(".svg-ca")
-      .attr("viewbox", "0 0 300 400")
-      .attr("width", "100%")
-      .attr("height", "auto")
 
-   const paths = document.getElementsByTagName('path');
-
-  [...paths].forEach((path) => {
-      const color = getColor(data[path.id]);
-      document.getElementById(path.id).setAttribute('fill', color);
-      buildCards(data[path.id]);
-  })
-
-  d3.selectAll("path")
-    .on("mouseover", () => {
-      d3.select(d3.event.target)
-      .raise()
-      .classed('active', true);
-    })
-    .on("mouseout", () => {
-      d3.select(d3.event.target)
-      .lower()
-      .classed('active', false);
-    })
-
-}
 
 
 init();
