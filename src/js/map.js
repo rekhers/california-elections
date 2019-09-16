@@ -16,17 +16,27 @@ export function buildMap(data) {
    })
  
    d3.selectAll("path")
-     .on("mouseover", () => {
-       d3.select(d3.event.target)
-       .raise()
-       .classed('active', true);
-     })
-     .on("mouseout", () => {
-       d3.select(d3.event.target)
-       .lower()
-       .classed('active', false);
-     })
+    //  .on("mouseover", () => {
+    //    d3.select(d3.event.target)
+    //    .raise()
+    //    .classed('active', true);
+    //  })
+    //  .on("mouseout", () => {
+    //    d3.select(d3.event.target)
+    //    .lower()
+    //    .classed('active', false);
+    //  })
      .on("click", () => {
+
+        d3.selectAll("path")
+          .lower()
+          .classed('active', false)
+
+
+        d3.select(d3.event.target)
+        .raise()
+        .classed('active', true);
+
         showCard(d3.event.target.id)
      })
  
@@ -52,7 +62,7 @@ export function buildMap(data) {
 
 
  function buildCards(county) {
-    const cardContainer = document.querySelector(".card-container");
+    const cardContainer = document.querySelector(".l-card");
     const card = document.createElement('div');
     cardContainer.appendChild(card);
     card.innerHTML = `<div class="c-card__content c-card__content--${county[0].fips}">

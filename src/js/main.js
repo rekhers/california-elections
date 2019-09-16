@@ -1,6 +1,6 @@
 import "babel-polyfill";
 import * as d3 from "d3";
-import { buildMap } from "./map.js";
+import { buildMap } from "./map";
 
 /*
 *
@@ -39,12 +39,10 @@ function handleData(data, fips) {
 }
 
 /*
-*
 * Fetch the svg and insert it into the DOM
-*
 */
-function insertSVG () {
-   const container = document.querySelector(".svg-container");
+export function insertSVG () {
+   const container = document.querySelector(".l-svg");
 
    return d3.xml('/data/ca-counties.svg')
     .then((xml) => {
@@ -53,18 +51,6 @@ function insertSVG () {
       container.appendChild(svgElement);
     })
 }
-
-
-
-
-
-
-
-
-      
-
-
-
 
 
 init();
