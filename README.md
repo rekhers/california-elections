@@ -2,6 +2,8 @@
 
 A county map of the 2016 California Presidential Election Results
 
+<img width="481" alt="Screen Shot 2019-09-16 at 11 17 53 AM" src="https://user-images.githubusercontent.com/5253461/64970574-157f9700-d874-11e9-90c5-f1f0ebff5d74.png">
+
 ## Setup
 
 Get started by installing dependencies with, `yarn install` or `yarn`. 
