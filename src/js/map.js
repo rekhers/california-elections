@@ -27,16 +27,35 @@ export function buildMap(data) {
        .classed('active', false);
      })
      .on("click", () => {
-        console.log(d3.event.target.id);
+        showCard(d3.event.target.id)
      })
  
  }
+
+
+ function showCard(id) {
+    const cards = document.querySelectorAll(".c-card__content");
+    const currentCard = document.querySelector(`.c-card__content--${id}`);
+
+
+    cards.forEach((card) => {
+         card.classList.remove("hidden");
+    })
+
+
+    cards.forEach((card) => {
+        if(card !== currentCard) {
+            card.classList.add("hidden");
+        }
+    })
+ }
+
 
  function buildCards(county) {
     const cardContainer = document.querySelector(".card-container");
     const card = document.createElement('div');
     cardContainer.appendChild(card);
-    card.innerHTML = `<div class="c-card__content">
+    card.innerHTML = `<div class="c-card__content c-card__content--${county[0].fips}">
     <h4 class="c-card__title"> ${county[0].name} </h4> 
     <ul class="c-card__list"> 
      <li> ${county[0].votes[0].candidate}: ${numberWithCommas(county[0].votes[0].votes)}  </li>
